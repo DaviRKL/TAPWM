@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs- Conceito, tipos, ferramentas e exemplos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    
+</style>
+<body>
+  
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+                <div class="container-fluid">
+                    <h1>APIs- Conceito, tipos, ferramentas e exemplos</h1>
+                </div>
+            </nav>
+        </header>
+    
+    <main>
+        <section>
+            <h2>O que é uma API?</h2>
+            <p>
+                As APIs(Application Programming Interface) são como uma ponte que interligam dois softwares para que eles possam se comunicar. É como um conjunto de regras e instruções para que estes dois sistemas interajam entre si. Por exemplo, temos um software de dados meteorológicos, que são atualizados diariamente, e temos o aplicativo de previsão do tempo do seu celular que necessita desses dados meteorológicos, então este aplicativo deve “falar”, ou sendo mais técnico , consumir a API do software de dados meteorológicos.
+            </p>
+            <img style="width: 100%; height: 300px;" src="https://media.licdn.com/dms/image/D5612AQG7ZxFgKF1sYQ/article-cover_image-shrink_720_1280/0/1680714896432?e=2147483647&v=beta&t=AUm56v5ZdLCwziCWuSvqZhIcqjmoyoA8xeLaqAn4Zpo">
+        </section>
+
+        <section >
+            <h2>Como as APIs funcionam?</h2>
+            <p>Dentro da arquitetura de uma API nós temos um Cliente e um Servidor. O software que consome a API é chamado de cliente e a API é chamado de servidor. Então, no exemplo do clima, o banco de dados meteorológico do instituto é o servidor e o aplicativo móvel é o cliente. 
+                Existem quatro maneiras diferentes pelas quais as APIs podem funcionar:
+            </p>
+            <div class="container"></div>
+                <div class="row" style="padding-bottom: 40px;">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">APIs SOAP</h2>
+                                <p class="card-text">Essas APIs usam o Simple Object Access Protocol (Protocolo de Acesso a Objetos Simples). Cliente e servidor trocam mensagens usando XML.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" >
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">APIs RPC</h2>
+                                <p class="card-text">Essas APIs são conhecidas como Remote Procedure Calls (Chamadas de Procedimento Remoto). O cliente conclui uma função (ou um procedimento) no servidor e o servidor envia a saída de volta ao cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding-bottom: 30px;">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">APIs WebSocket</h2>
+                                <p class="card-text">A API de WebSocket é outro desenvolvimento de API da Web moderno que usa objetos JSON para transmitir dados. Uma API WebSocket oferece suporte à comunicação bidirecional entre aplicativos cliente e o servidor. O servidor pode enviar mensagens de retorno de chamada a clientes conectados, tornando-o mais eficiente que a API REST.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">APIs REST</h2>
+                                <p class="card-text">Essas são as APIs mais populares e flexíveis encontradas na Web atualmente. O cliente envia solicitações ao servidor como dados. O servidor usa essa entrada do cliente para iniciar funções internas e retorna os dados de saída ao cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Quais são os tipos de API?</h2>
+            <p> 
+                As APIs são classificadas de acordo com sua arquitetura e escopo de uso. Já exploramos os principais tipos de arquiteturas de API, agora, vamos dar uma olhada no escopo de uso.
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">APIs privadas</h2>
+                                <p class="card-text">Elas são internas a uma empresa e são usadas apenas para conectar sistemas e dados dentro da empresa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">APIs públicas</h2>
+                                <p class="card-text">Estas são abertas ao público e podem ser usadas por qualquer pessoa. Pode ou não haver alguma autorização e custo associado a esses tipos de APIs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">APIs de parceiros</h2>
+                                <p class="card-text">Estas também são privadas, porém são acessíveis apenas por desenvolvedores externos autorizados para auxiliar as parcerias entre empresas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">APIs compostas</h2>
+                                <p class="card-text">Estas combinam duas ou mais APIs distintas para atender a requisitos ou comportamentos complexos do sistema.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Ferramentas para API</h2>
+            <div>
+                <h2>Gateway de API</h2>
+                <p>
+                    Um API Gateway é uma ferramenta de gerenciamento de APIs para clientes empresariais que usam uma grande variedade de serviços de backend. Os gateways de API geralmente lidam com tarefas comuns, como autenticação de usuários, estatísticas e gerenciamento de taxas que são aplicáveis a todas as chamadas de API. 
+                </p>
+                <h1>Exemplo: Amazon API Gateway</h1>
+                <p>
+                    O Amazon API Gateway  um serviço gerenciado que permite que desenvolvedores criem, publiquem, mantenham, monitorem e protejam APIs em qualquer escala com facilidade. Ele lida com todas as tarefas envolvidas na aceitação e no processamento de milhares de chamadas de API simultâneas, incluindo gerenciamento de tráfego, suporte a CORS, autorização e controle de acesso, controle de utilização, monitoramento e gerenciamento de versão de API.
+                </p>
+            </div>
+            <div>
+                <h2>Ferramentas de design de API</h2>
+            <p> 
+                Uma ferramenta de design de API, é basicamente um software que ajuda os desenvolvedores a criar, testar e gerenciar APIs de forma mais fácil. É como uma caixa de ferramentas para construir a "ponte" que mencionei no início.
+            </p>
+            <h1>Exemplo: Postman</h1>
+            <img style="width: 100%; height: 300px;" src="https://th.bing.com/th/id/OIP.fB3ZdkTPcu9uZF-CzX-3xQAAAA?rs=1&pid=ImgDetMain">
+            
+                <p>
+                    Postman é um ambiente de desenvolvimento de API amplamente utilizado que simplifica o processo de construção, teste e documentação de APIs. Ele oferece suporte ao design, simulação, depuração e monitoramento de APIs, fornecendo aos desenvolvedores um conjunto de ferramentas abrangente para criar e manter APIs com mais eficiência.Postman também possui ferramentas de colaboração, permitindo que as equipes trabalhem perfeitamente em projetos de API. Além disso, ele oferece suporte a uma ampla variedade de formatos de API, incluindo REST , GraphQL e SOAP.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
