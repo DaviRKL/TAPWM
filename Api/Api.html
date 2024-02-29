@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/api.ico" type="image/png">
+    
 </head>
 <body>
   
@@ -40,36 +42,38 @@
             
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="SOAP" data-title="APIs SOAP">
+                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="SOAP" data-title="APIs SOAP" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_C_7ZRiaSgtni7RktEYFUEJ27vD_gs5vn7zzrASTbIVxsXi89o9G3WiZd4nAb2ZFbLY&usqp=CAU">
                             <div class="card-body">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_C_7ZRiaSgtni7RktEYFUEJ27vD_gs5vn7zzrASTbIVxsXi89o9G3WiZd4nAb2ZFbLY&usqp=CAU" class="card-img-top" alt="...">
-                                <h2 class="card-title">APIs SOAP</h2>
-                                
+                                <h2 class="card-title">SOAP</h2>
+                                <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3" >
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="RPC" data-title="APIs RPC">
+                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="RPC" data-title="APIs RPC" data-image="https://camo.githubusercontent.com/5e26e19b0d234ebd53bd9130e49e0e46a0791a1e16e9e8171ce0d8ff498ded76/68747470733a2f2f6873746f2e6f72672f776562742f6c6a2f73382f65762f6c6a7338657673687a6a7675686b6d6a5f333235757179637675382e706e67">
                             <div class="card-body">
                                 <img src="https://camo.githubusercontent.com/5e26e19b0d234ebd53bd9130e49e0e46a0791a1e16e9e8171ce0d8ff498ded76/68747470733a2f2f6873746f2e6f72672f776562742f6c6a2f73382f65762f6c6a7338657673687a6a7675686b6d6a5f333235757179637675382e706e67" class="card-img-top" alt="...">
-                                <h2 class="card-title">APIs RPC</h2>
-                                
+                                <h2 class="card-title">RPC</h2>
+                                <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="WEB" data-title="APIs WebSocket">
+                        <div class="card text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="WEB" data-title="APIs WebSocket" data-image="https://miro.medium.com/v2/resize:fit:600/1*4H8kR8jNJTIapdsdc4UC7w.png">
                             <div class="card-body">
                                 <img src="https://miro.medium.com/v2/resize:fit:600/1*4H8kR8jNJTIapdsdc4UC7w.png" class="card-img-top" alt="...">
-                                <h2 class="card-title">APIs WebSocket</h2>
+                                <h2 class="card-title">WebSocket</h2>
+                                <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="REST" data-title="APIs REST">
+                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="REST" data-title="APIs REST" data-image="https://media.licdn.com/dms/image/D4D12AQEeNNHq05k7MA/article-cover_image-shrink_720_1280/0/1687786979245?e=2147483647&v=beta&t=AVc2G-hvHNjTMklQtEt6qlby2l79Bf5dBBkUB5DBRe0">
                             <div class="card-body">
                                 <img src="https://media.licdn.com/dms/image/D4D12AQEeNNHq05k7MA/article-cover_image-shrink_720_1280/0/1687786979245?e=2147483647&v=beta&t=AVc2G-hvHNjTMklQtEt6qlby2l79Bf5dBBkUB5DBRe0" class="card-img-top" alt="...">
-                                <h2 class="card-title">APIs REST</h2>
+                                <h2 class="card-title">REST</h2>
+                                <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                             </div>
                         </div>
                     </div>
@@ -86,32 +90,32 @@
           
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
+                        <div class="card" id="tipos">
+                            <div class="card-body" id="tipos">
                                 <h2 class="card-title">APIs privadas</h2>
                                 <p class="card-text">Elas são internas a uma empresa e são usadas apenas para conectar sistemas e dados dentro da empresa.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
+                        <div class="card" id="tipos">
+                            <div class="card-body" id="tipos">
                                 <h2 class="card-title">APIs públicas</h2>
                                 <p class="card-text">Estas são abertas ao público e podem ser usadas por qualquer pessoa. Pode ou não haver alguma autorização e custo associado a esses tipos de APIs.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
+                        <div class="card" id="tipos">
+                            <div class="card-body" id="tipos">
                                 <h2 class="card-title">APIs de parceiros</h2>
                                 <p class="card-text">Estas também são privadas, porém são acessíveis apenas por desenvolvedores externos autorizados para auxiliar as parcerias entre empresas.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
+                        <div class="card" id="tipos">
+                            <div class="card-body" id="tipos">
                                 <h2 class="card-title">APIs compostas</h2>
                                 <p class="card-text">Estas combinam duas ou mais APIs distintas para atender a requisitos ou comportamentos complexos do sistema.</p>
                             </div>
@@ -128,7 +132,7 @@
                         <p>
                             Um API Gateway é uma ferramenta de gerenciamento de APIs para clientes empresariais que usam uma grande variedade de serviços de backend. Os gateways de API geralmente lidam com tarefas comuns, como autenticação de usuários, estatísticas e gerenciamento de taxas que são aplicáveis a todas as chamadas de API. 
                         </p>
-                        <h1>Exemplo: Amazon API Gateway</h1>
+                        <h3>Amazon API Gateway</h3>
                         <p>
                             O Amazon API Gateway  um serviço gerenciado que permite que desenvolvedores criem, publiquem, mantenham, monitorem e protejam APIs em qualquer escala com facilidade. Ele lida com todas as tarefas envolvidas na aceitação e no processamento de milhares de chamadas de API simultâneas, incluindo gerenciamento de tráfego, suporte a CORS, autorização e controle de acesso, controle de utilização, monitoramento e gerenciamento de versão de API.
                         </p>
@@ -146,42 +150,46 @@
                     </p>              
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="POSTMAN" data-title="Postman">
+                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="POSTMAN" data-title="Postman" data-image="https://th.bing.com/th/id/OIP.fB3ZdkTPcu9uZF-CzX-3xQAAAA?rs=1&pid=ImgDetMain">
                             <img src="https://th.bing.com/th/id/OIP.fB3ZdkTPcu9uZF-CzX-3xQAAAA?rs=1&pid=ImgDetMain" class="card-img-top" alt="Exemplo: Postman">
                             <div class="card-body">
                                 <h5 class="card-title">Postman</h5>
                                 <p class="card-text"></p>
+                                <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                             </div>
                         </div>
                     </div>
 
                      <div class="col-md-3">
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="SWAGGER" data-title="SwaggerHub">
+                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="SWAGGER" data-title="SwaggerHub" data-image="https://logowik.com/content/uploads/images/swagger6360.jpg">
                           <img src="https://logowik.com/content/uploads/images/swagger6360.jpg" class="card-img-top" alt="SwaggerHub">
                           <div class="card-body">
                             <h5 class="card-title">SwaggerHub</h5>
                             <p class="card-text"></p>
+                            <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                           </div>
                         </div>
                       </div>
                   
                      
                       <div class="col-md-3">
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="APPMASTER" data-title="AppMaster">
+                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="APPMASTER" data-title="AppMaster" data-image="https://super-monitoring.com/blog/wp-content/uploads/2020/02/rapidapi.png">
                           <img src="https://super-monitoring.com/blog/wp-content/uploads/2020/02/rapidapi.png" class="card-img-top" alt="Appmaster">
                           <div class="card-body">
                             <h5 class="card-title">Appmaster</h5>
                             <p class="card-text"></p>
+                            <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                           </div>
                         </div>
                       </div>
                   
                       <div class="col-md-3">
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="RAPID" data-title="RapidAPI">
+                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="RAPID" data-title="RapidAPI"  data-image="https://cdn.open-pr.com/W/7/W707500653_g.jpg">
                           <img src="https://cdn.open-pr.com/W/7/W707500653_g.jpg" class="card-img-top" alt="RapidAPI">
                           <div class="card-body">
                             <h5 class="card-title">RapidAPI</h5>
                             <p class="card-text"></p>
+                            <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                           </div>
                         </div>
                       </div>
@@ -195,8 +203,9 @@
                 <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header" id="modalTitleText">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <img style="height: 250px; width: 100%;" src="" id="modalImage">
                     <div class="modal-body" id="modalBodyText">
                     </div>
                     <div class="modal-footer">
@@ -217,10 +226,11 @@
     // Adicionando evento de clique nos cards para mostrar o modal e exibir o ID do card clicado
     document.querySelectorAll('.card').forEach(function(card) {
       card.addEventListener('click', function() {
+      
         var cardText = card.getAttribute('data-text');
         var cardId = card.getAttribute('data-id');
         var cardTitle = card.getAttribute('data-title');
-       
+        var cardImage = card.getAttribute('data-image');
         switch(cardId) {
             case "SOAP":
             cardText = "Essas APIs usam o Simple Object Access Protocol (Protocolo de Acesso a Objetos Simples). Cliente e servidor trocam mensagens usando XML.";
@@ -251,6 +261,7 @@
         }
       document.getElementById('modalBodyText').innerText = cardText;
       document.getElementById('modalTitleText').innerText = cardTitle;
+      document.getElementById('modalImage').src = cardImage;
       });
     });
   </script>
