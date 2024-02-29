@@ -2,7 +2,12 @@
     height:150px;
 }
 .card,.card-body{
-    width: 300px;
+    width: 250px;
+    
+}
+
+#tipos{
+    height: 240px;
 }
 #container {
 display: flex;
