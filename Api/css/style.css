@@ -3,12 +3,11 @@
 }
 .card,.card-body{
     width: 250px;
-    
+    border-radius: 20px;
+
 }
 
-#tipos{
-    height: 240px;
-}
+
 #container {
 display: flex;
 margin-top: 50px;
