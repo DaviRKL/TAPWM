@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APIs- Conceito, tipos, ferramentas e exemplos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/api.ico" type="image/png">
+   <link rel="icon" href="images/api_icon_211613.ico">
     
 </head>
 <body>
@@ -21,30 +20,30 @@
         </header>
     
     <main>
-        <section class="container" id="container">
-            <div class="content">
-                <h2>O que é uma API?</h2>
-                <p>
-                    As APIs(Application Programming Interface) são como uma ponte que interligam dois softwares para que eles possam se comunicar. É como um conjunto de regras e instruções para que estes dois sistemas interajam entre si. Por exemplo, temos um software de dados meteorológicos, que são atualizados diariamente, e temos o aplicativo de previsão do tempo do seu celular que necessita desses dados meteorológicos, então este aplicativo deve “falar”, ou sendo mais técnico, consumir a API do software de dados meteorológicos.
-                </p>
-            </div>
-            <div class="image">
-                <img style="width: 100%; height: 210px;" src="https://media.licdn.com/dms/image/D5612AQG7ZxFgKF1sYQ/article-cover_image-shrink_720_1280/0/1680714896432?e=2147483647&v=beta&t=AUm56v5ZdLCwziCWuSvqZhIcqjmoyoA8xeLaqAn4Zpo">
+        <section id="section1">
+            <div class="container" id="container">
+                <div class="content">
+                    <h2>O que é uma API?</h2>
+                    <p>
+                        As APIs(Application Programming Interface) são como uma ponte que interligam dois softwares para que eles possam se comunicar. É como um conjunto de regras e instruções para que estes dois sistemas interajam entre si. Por exemplo, temos um software de dados meteorológicos, que são atualizados diariamente, e temos o aplicativo de previsão do tempo do seu celular que necessita desses dados meteorológicos, então este aplicativo deve “falar”, ou sendo mais técnico, consumir a API do software de dados meteorológicos.
+                    </p>
+                </div>
+                <div class="image">
+                    <img style="width: 100%; height: 210px;" src="images/apiex.jpg">
+                </div>
             </div>
         </section>
-        
-
-        <section  class="container">
-            <h2>Como as APIs funcionam?</h2>
-            <p>Dentro da arquitetura de uma API nós temos um Cliente e um Servidor. O software que consome a API é chamado de cliente e a API é chamado de servidor. Então, no exemplo do clima, o banco de dados meteorológico do instituto é o servidor e o aplicativo móvel é o cliente. 
-                Clique para ver quatro maneiras diferentes pelas quais as APIs podem funcionar:
-            </p>
-            
+        <section  id="section2">
+            <div class="container">
+                <h2>Como as APIs funcionam?</h2>
+                <p>Dentro da arquitetura de uma API nós temos um Cliente e um Servidor. O software que consome a API é chamado de cliente e a API é chamado de servidor. Então, no exemplo do clima, o banco de dados meteorológico do instituto é o servidor e o aplicativo móvel é o cliente. 
+                    Clique para ver quatro maneiras diferentes pelas quais as APIs podem funcionar:
+                </p>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="SOAP" data-title="APIs SOAP" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_C_7ZRiaSgtni7RktEYFUEJ27vD_gs5vn7zzrASTbIVxsXi89o9G3WiZd4nAb2ZFbLY&usqp=CAU">
                             <div class="card-body">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_C_7ZRiaSgtni7RktEYFUEJ27vD_gs5vn7zzrASTbIVxsXi89o9G3WiZd4nAb2ZFbLY&usqp=CAU" class="card-img-top" alt="...">
+                                <img src="images/soap.png" class="card-img-top" alt="...">
                                 <h2 class="card-title">SOAP</h2>
                                 <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                             </div>
@@ -53,7 +52,7 @@
                     <div class="col-md-3" >
                         <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="RPC" data-title="APIs RPC" data-image="https://camo.githubusercontent.com/5e26e19b0d234ebd53bd9130e49e0e46a0791a1e16e9e8171ce0d8ff498ded76/68747470733a2f2f6873746f2e6f72672f776562742f6c6a2f73382f65762f6c6a7338657673687a6a7675686b6d6a5f333235757179637675382e706e67">
                             <div class="card-body">
-                                <img src="https://camo.githubusercontent.com/5e26e19b0d234ebd53bd9130e49e0e46a0791a1e16e9e8171ce0d8ff498ded76/68747470733a2f2f6873746f2e6f72672f776562742f6c6a2f73382f65762f6c6a7338657673687a6a7675686b6d6a5f333235757179637675382e706e67" class="card-img-top" alt="...">
+                                <img src="images/rpc.png" class="card-img-top" alt="...">
                                 <h2 class="card-title">RPC</h2>
                                 <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                             </div>
@@ -62,32 +61,30 @@
                     <div class="col-md-3">
                         <div class="card text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="WEB" data-title="APIs WebSocket" data-image="https://miro.medium.com/v2/resize:fit:600/1*4H8kR8jNJTIapdsdc4UC7w.png">
                             <div class="card-body">
-                                <img src="https://miro.medium.com/v2/resize:fit:600/1*4H8kR8jNJTIapdsdc4UC7w.png" class="card-img-top" alt="...">
+                                <img src="images/webso.png" class="card-img-top" alt="...">
                                 <h2 class="card-title">WebSocket</h2>
                                 <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="REST" data-title="APIs REST" data-image="https://media.licdn.com/dms/image/D4D12AQEeNNHq05k7MA/article-cover_image-shrink_720_1280/0/1687786979245?e=2147483647&v=beta&t=AVc2G-hvHNjTMklQtEt6qlby2l79Bf5dBBkUB5DBRe0">
+                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="REST" data-title="APIs REST" data-image="images/rest.png">
                             <div class="card-body">
-                                <img src="https://media.licdn.com/dms/image/D4D12AQEeNNHq05k7MA/article-cover_image-shrink_720_1280/0/1687786979245?e=2147483647&v=beta&t=AVc2G-hvHNjTMklQtEt6qlby2l79Bf5dBBkUB5DBRe0" class="card-img-top" alt="...">
+                                <img src="images/rest.png" class="card-img-top" alt="...">
                                 <h2 class="card-title">REST</h2>
                                 <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            
-                
+            </div>
         </section>
-        <section  class="container">
-            
-            <h2>Quais são os tipos de API?</h2>
-            <p> 
-                As APIs são classificadas de acordo com sua arquitetura e escopo de uso. Já exploramos os principais tipos de arquiteturas de API, agora, vamos dar uma olhada no escopo de uso.
-            </p>
-          
+        <section id="#section3">
+            <div  class="container">
+                <h2>Quais são os tipos de API?</h2>
+                <p> 
+                    As APIs são classificadas de acordo com sua arquitetura e escopo de uso. Já exploramos os principais tipos de arquiteturas de API, agora, vamos dar uma olhada no escopo de uso.
+                </p>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card" id="tipos">
@@ -122,10 +119,11 @@
                         </div>
                     </div>
                 </div>
-            
+            </div>
         </section>
-        <section   class="container">
-            <h2>Quais são as ferramentas para API?</h2>
+        <section   id="section4">
+            <div  class="container">
+                <h2>Quais são as ferramentas para API?</h2>
                 <div id="container">
                     <div class="content">
                         <h2 >Gateway de API</h2>
@@ -138,69 +136,64 @@
                         </p>
                     </div>
                     <div class="image">
-                        <img style="width: 100%; height: 300px;" src="https://blog.mechanicalrock.io/img/amazon_api_gateway.png">
+                        <a href="https://aws.amazon.com/pt/api-gateway/">
+                            <img style="width: 100%; height: 300px;" src="images/amazon_api_gateway.png">
+                        </a>
+                       
                     </div>
                 </div>
-               
-           
-            <div>
-                <h2>Ferramentas de design de API</h2>
+                <div>
+                    <h2>Ferramentas de design de API</h2>
                     <p> 
                         Uma ferramenta de design de API, é basicamente um software que ajuda os desenvolvedores a criar, testar e gerenciar APIs de forma mais fácil. É como uma caixa de ferramentas para construir a "ponte" que mencionei no início. Clique a seguir para conhecer algumas
                     </p>              
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="POSTMAN" data-title="Postman" data-image="https://th.bing.com/th/id/OIP.fB3ZdkTPcu9uZF-CzX-3xQAAAA?rs=1&pid=ImgDetMain">
-                            <img src="https://th.bing.com/th/id/OIP.fB3ZdkTPcu9uZF-CzX-3xQAAAA?rs=1&pid=ImgDetMain" class="card-img-top" alt="Exemplo: Postman">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="POSTMAN" data-title="Postman" data-image="images/postman.png">
+                                <img src="images/postman.png" class="card-img-top" alt="Exemplo: Postman">
+                                <div class="card-body">
+                                    <h5 class="card-title">Postman</h5>
+                                    <p class="card-text"></p>
+                                    <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="SWAGGER" data-title="SwaggerHub" data-image="images/swagger6360.jpg">
+                            <img src="images/swagger6360.jpg" class="card-img-top" alt="SwaggerHub">
                             <div class="card-body">
-                                <h5 class="card-title">Postman</h5>
+                                <h5 class="card-title">SwaggerHub</h5>
                                 <p class="card-text"></p>
                                 <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
                             </div>
+                            </div>
                         </div>
-                    </div>
-
-                     <div class="col-md-3">
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="SWAGGER" data-title="SwaggerHub" data-image="https://logowik.com/content/uploads/images/swagger6360.jpg">
-                          <img src="https://logowik.com/content/uploads/images/swagger6360.jpg" class="card-img-top" alt="SwaggerHub">
-                          <div class="card-body">
-                            <h5 class="card-title">SwaggerHub</h5>
-                            <p class="card-text"></p>
-                            <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
-                          </div>
+                        <div class="col-md-3">
+                            <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="APPMASTER" data-title="AppMaster" data-image="images/rapidapi.png">
+                                <img src="images/rapidapi.png" class="card-img-top" alt="Appmaster">
+                                <div class="card-body">
+                                    <h5 class="card-title">Appmaster</h5>
+                                    <p class="card-text"></p>
+                                    <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                  
-                     
-                      <div class="col-md-3">
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="APPMASTER" data-title="AppMaster" data-image="https://super-monitoring.com/blog/wp-content/uploads/2020/02/rapidapi.png">
-                          <img src="https://super-monitoring.com/blog/wp-content/uploads/2020/02/rapidapi.png" class="card-img-top" alt="Appmaster">
-                          <div class="card-body">
-                            <h5 class="card-title">Appmaster</h5>
-                            <p class="card-text"></p>
-                            <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
-                          </div>
+                        <div class="col-md-3">
+                            <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="RAPID" data-title="RapidAPI"  data-image="images/AppMaster.jpg">
+                                <img src="images/AppMaster.jpg" class="card-img-top" alt="RapidAPI">
+                                <div class="card-body">
+                                    <h5 class="card-title">RapidAPI</h5>
+                                    <p class="card-text"></p>
+                                    <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                  
-                      <div class="col-md-3">
-                        <div class="card text-center"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="RAPID" data-title="RapidAPI"  data-image="https://cdn.open-pr.com/W/7/W707500653_g.jpg">
-                          <img src="https://cdn.open-pr.com/W/7/W707500653_g.jpg" class="card-img-top" alt="RapidAPI">
-                          <div class="card-body">
-                            <h5 class="card-title">RapidAPI</h5>
-                            <p class="card-text"></p>
-                            <button type="button" class="btn btn-dark" style="width:100%">Saiba mais!</button>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                 </div>
-                
             </div>
         </section>
-        <section> 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header" id="modalTitleText">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -209,59 +202,16 @@
                     <div class="modal-body" id="modalBodyText">
                     </div>
                     <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
                     </div>
                 </div>
-                </div>
             </div>
-        </section>
-        
+        </div>
     </main>
-    <footer class="bg-dark text-center text-white py-3">
+    <footer class="text-center bg-dark text-white py-3">
         <p>&copy; 2024 APIs- Conceito, tipos, ferramentas e exemplos. Davi Ryan Konuma Lima</p>
     </footer>
 </body>
 </html>
-<script>
-    // Adicionando evento de clique nos cards para mostrar o modal e exibir o ID do card clicado
-    document.querySelectorAll('.card').forEach(function(card) {
-      card.addEventListener('click', function() {
-      
-        var cardText = card.getAttribute('data-text');
-        var cardId = card.getAttribute('data-id');
-        var cardTitle = card.getAttribute('data-title');
-        var cardImage = card.getAttribute('data-image');
-        switch(cardId) {
-            case "SOAP":
-            cardText = "Essas APIs usam o Simple Object Access Protocol (Protocolo de Acesso a Objetos Simples). Cliente e servidor trocam mensagens usando XML.";
-            break;
-            case "RPC":
-            cardText = "Essas APIs são conhecidas como Remote Procedure Calls (Chamadas de Procedimento Remoto). O cliente conclui uma função (ou um procedimento) no servidor e o servidor envia a saída de volta ao cliente.";
-            break;
-            case "WEB":
-            cardText = "A API de WebSocket é outro desenvolvimento de API da Web moderno que usa objetos JSON para transmitir dados. Uma API WebSocket oferece suporte à comunicação bidirecional entre aplicativos cliente e o servidor. O servidor pode enviar mensagens de retorno de chamada a clientes conectados, tornando-o mais eficiente que a API REST.";
-            break;
-            case "REST":
-            cardText="Essas são as APIs mais populares e flexíveis encontradas na Web atualmente. O cliente envia solicitações ao servidor como dados. O servidor usa essa entrada do cliente para iniciar funções internas e retorna os dados de saída ao cliente."
-            break;
-            case "POSTMAN":
-            cardText = "Postman é um ambiente de desenvolvimento de API amplamente utilizado que simplifica o processo de construção, teste e documentação de APIs. Ele oferece suporte ao design, simulação, depuração e monitoramento de APIs, fornecendo aos desenvolvedores um conjunto de ferramentas abrangente para criar e manter APIs com mais eficiência. Postman também possui ferramentas de colaboração, permitindo que as equipes trabalhem perfeitamente em projetos de API. Além disso, ele oferece suporte a uma ampla variedade de formatos de API, incluindo REST, GraphQL e SOAP."
-            break;
-            case "SWAGGER":
-            cardText = "Swagger Editor e Swaggerhub são ferramentas da estrutura Swagger que facilitam o design e a documentação da API. Swagger Editor é um editor de código aberto baseado em navegador para projetar e documentar APIs usando a especificação OpenAPI Ele fornece validação em tempo real e recursos de preenchimento automático, ajudando os desenvolvedores a criar especificações de API precisas e compatíveis. Swaggerhub, por outro lado, é uma plataforma colaborativa que oferece recursos avançados como controle de versão, controle de acesso e gerenciamento do ciclo de vida da API. Ambas as ferramentas suportam a geração de SDKs de cliente e stubs de servidor em várias linguagens, permitindo rápido desenvolvimento e teste de API.  "
-            break;
-            case "APPMASTER":
-            cardText = "AppMaster é uma ferramenta no-code com uma função de design de API que ajuda os desenvolvedores a criar endpoints cruciais para aplicativos de servidor interagirem com interfaces de usuário e sistemas externos. A criação de um endpoint no AppMaster envolve navegar até a seção Endpoints e iniciar um novo endpoint do tipo REST API. Este endpoint segue os princípios RESTful e usa JSON para transmissão de dados."
-            break;
-            case "RAPID":
-            cardText = "RapidAPI é uma plataforma de API abrangente que permite aos desenvolvedores descobrir, conectar e gerenciar APIs. Oferece um mercado onde os desenvolvedores podem acessar milhares de APIs de vários provedores, simplificando o processo de integração de APIs em aplicativos. RapidAPI também fornece ferramentas para projetar, construir e gerenciar APIs, incluindo recursos como documentação de API, controle de versão e controle de acesso. Suporta vários formatos de API, como REST, GraphQL e SOAP."
-            break;
-            
-
-        }
-      document.getElementById('modalBodyText').innerText = cardText;
-      document.getElementById('modalTitleText').innerText = cardTitle;
-      document.getElementById('modalImage').src = cardImage;
-      });
-    });
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
