@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Bem vindo ao Jokenpo");
+        do{
+            x=0;
+            y= 0;
+            
+            x = prompt("Escolha\n1 para Pedra\n2 para Papel\n3 para Tesoura");
+            y = Math.floor(Math.random() * 3 +1);
+            if( x==3 & y==1){
+                alert("Voce jogou tesoura e ele papel, voce ganhou");
+            }
+            else if( x==3 & y==3){
+                alert("Voce jogou tesoura e ele tesoura, deu empate");
+            }
+            else if( x==3 & y==1){
+                alert("Voce jogou tesoura e ele Pedra, voce perdeu");
+            }
+            else if( x==2 & y==2){
+                alert("Voce jogou papel e ele papel, deu empate");
+            }
+            else if( x==2 & y==3){
+                alert("Voce jogou papel e ele tesoura, voce perdeu");
+            }
+            else if( x==2 & y==1){
+                alert("Voce jogou papel e ele pedra, Voce ganhou");
+            }
+            else if( x==1 & y==2){
+                alert("Voce jogou pedra e ele papel, voce perdeu");
+            }
+            else if( x==1 & y==3){
+                alert("Voce jogou pedra e ele tesoura, voce ganhou");
+            }
+            else if( x==1 & y==1){
+                alert("Voce jogou pedra e ele pedra, deu empate");
+            }
+            
+        }while(true)
+    </script>
+</body>
+</html>
