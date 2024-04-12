@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+        const pessoas = [];
+        let maiorIdade = -Infinity;
+        let menorIdade = Infinity;
+        let qtdPessoas = 0;
+        let subMedia = 0;
+        let media = 0;
+        let qtdPessimo = 0;
+        let qtdRegular = 0;
+        let qtdBO = 0;
+        let mulheres = 0;
+        let porcenBO = 0;
+        let homens = 0;
+        
+        class Pessoa {
+            constructor( idade, sexo, opiniao) {
+                this.idade = idade;
+                this.sexo = sexo;
+                this.opiniao = opiniao;
+            }
+        }
+    
+        for (var i = 0; i < 2; i++) {
+            idade = parseInt(prompt("Informe sua idade")) ;
+            sexo = parseInt(prompt("Informe o seu sexo \n1-Mulher\n2-Homem"));
+            opiniao = parseInt(prompt("Escreva a sua opinião\n1-Pessimo\n2-Regular\n3-Bom\n4-Otimo"));
+            pessoas.push(new Pessoa(idade, sexo, opiniao));
+        }
+    
+        for (const pessoa of pessoas) {
+            
+            qtdPessoas++;
+
+            if (maiorIdade < pessoa.idade) {
+                maiorIdade = pessoa.idade;
+            }
+
+            if (menorIdade > pessoa.idade) {
+                menorIdade = pessoa.idade;
+            }
+
+            switch(pessoa.opiniao){
+                case 1:
+                    qtdPessimo++;
+                    break;
+                case 2:
+                    qtdRegular++;
+                    break;
+                case 3:
+                    qtdBO++;
+                    break;
+                case 4:
+                    qtdBO++;
+                    break;
+            }
+
+            switch(pessoa.sexo){
+                
+                case 1:
+                    mulheres++;
+                    break;
+                case 2:
+                    homens++;
+                    break;
+            }
+
+            subMedia+= pessoa.idade;
+        }
+        porcenBO = (qtdBO / qtdPessoas) * 100;
+        
+        media = subMedia / qtdPessoas;
+        
+        alert("Media de idade: " + media + "\nMaior idade: " + maiorIdade + "\nMenor idade: " + menorIdade + "\nQuantidade de avaliações Pessimo: " + qtdPessimo + "\n % de Pessoas que responderam Otimo ou Bom : " + porcenBO + "\nQuantidade de Mulheres: " + mulheres + "\nQuantidade de Homens: " + homens);
+    </script>
+
+    </body>
+
+</html>
