@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = parseFloat(prompt("Lado A"))
+        b = parseFloat(prompt("Lado B"))
+        c = parseFloat(prompt("Lado C"))
+        if(Math.abs(b-c) < a <b+c && Math.abs(a-c)< b < a+c && Math.pow(a-b) < c < a+b){
+            if(a == b && a == c ){
+                alert("Isosceles")
+            }
+            else if( a == b || b == c || c == a){
+                alert("Equilatero")
+            }
+            else {
+                alert("Escaleno")
+            }
+
+        }
+    </script>
+</body>
+</html>
