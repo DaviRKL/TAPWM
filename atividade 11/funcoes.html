@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        MaiorN = 0
+
+        function maior(n1, n2, n3, n4) {
+
+            if (n1 > n2 && n1 > n3 && n1 > n4) {
+                MaiorN = n1
+            }
+            else if (n2 > n1 && n2 > n3 && n2 > n4) {
+                MaiorN = n2
+            }
+            else if (n3 > n1 && n3 > n2 && n3 > n4) {
+                MaiorN = n3
+            }
+            else if (n4 > n1 && n4 > n2 && n4 > n3) {
+                MaiorN = n4
+            }
+
+            return MaiorN
+        }
+
+        alert(maior(2,11,8,10))
+    </script>
+</body>
+
+</html>

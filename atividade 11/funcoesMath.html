@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function maior(n1, n2, n3, n4) {
+            var arr = [];
+            arr.push(n1, n2, n3, n4)
+
+            var max = arr.reduce(function (a, b) {
+                return Math.max(a, b);
+            }, -Infinity);
+
+            return max
+        }
+        alert(maior(2, 11, 18, 10))
+    </script>
+</body>
+
+</html>
