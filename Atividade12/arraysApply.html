@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var vetorNumeros = [2,4,8]
+            
+            function CalculaMaiorNumero(vetorNumeros){
+                var soma = 0
+                for (i=0; i< arguments.length; i++){
+                    
+                    soma += arguments[i]
+                }
+                return soma
+            }
+            
+            alert(CalculaMaiorNumero.apply(null, vetorNumeros));
+            alert(Math.pow(vetorNumeros[1],2))
+            alert(Math.pow(vetorNumeros[2],2))
+        </script>
+    </body>
+</html>

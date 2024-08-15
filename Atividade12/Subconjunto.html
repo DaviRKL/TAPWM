@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var palavra1 = prompt("Digite a primeira palavra")
+            var palavra2 = prompt("Digite a segunda palavra")
+            
+            var verificaPalavra = palavra1.includes( palavra2)
+
+            if(!palavra1 || !palavra2){
+                alert("Erro")
+            }
+            else if(verificaPalavra){
+                alert("É um subconjunto")
+            }
+            else{
+                alert("Não é um subconjunto")
+            }
+            
+        </script>
+    </body>
+</html>
