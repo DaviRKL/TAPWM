@@ -9,16 +9,20 @@
         <script>
             var vetorNumeros = [2,4,8]
             
-            function CalculaMaiorNumero(vetorNumeros){
-                var soma = 0
-                for (i=0; i< arguments.length; i++){
+            function calculaSoma(vetorNumeros){
+                // var soma = 0
+                // for (i=0; i< arguments.length; i++){
                     
-                    soma += arguments[i]
-                }
-                return soma
+                //     soma += arguments[i]
+                // }
+                // return soma
+        
+                return vetorNumeros.reduce(function(total, numero){
+                    return total + numero;
+                })
             }
             
-            alert(CalculaMaiorNumero.apply(null, vetorNumeros));
+            alert(calculaSoma.apply(null, [vetorNumeros]));
             alert(Math.pow(vetorNumeros[1],2))
             alert(Math.pow(vetorNumeros[2],2))
         </script>
