@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Forma Literal
+        var Aluno1 = {
+            name: "Manoel",
+            ra: 1234,
+            turma: "A"
+        }
+
+        //Usando construtor
+        var Aluno2 = new Object();
+        Aluno2.name = "Matias";
+        Aluno2.ra = 2345;
+        Aluno2.turma = "B"
+
+        //Terceira forma
+
+        var Aluno3 = {}
+        Aluno3.name = "Jonas";
+        Aluno.ra = 3456;
+        Aluno3.turma = "C"
+
+        //Object.Create
+
+        var Aluno4 = Object.create(Aluno3, {name: {value:"Jotinha"}, ra: {value: "5678"}, turma: {value: "D"}} )
+
+    </script>
+</body>
+</html>
