@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Usando eventos no Javascript</title>
+</head>
+
+<body>
+	
+    <img style="width: 100px; height: 50px;" src="./images/janelaFechada.png"  onmouseover="mMover(this)" onmouseout="mOut(this)" onmousedown="mDown(this)" onmouseup="mUp(this)">
+
+	<script>
+		function mDown(obj) {
+			obj.src = "./images/janelaFechada.png"
+		}
+
+
+        function mUp(obj) {
+			obj.src = "./images/janelaQuebrada.png"
+			//alert("AAA");
+
+		}
+		function mMover(obj) {
+			obj.src = "./images/janelaAberta.png"
+			//alert("AAA");
+
+		}
+		
+		
+		function mOut(obj) {
+			obj.src = "./images/janelaFechada.png"
+		}
+	</script>
+</body>
+
+</html>
