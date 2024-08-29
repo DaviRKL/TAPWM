@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Rectangle(height, width) {
+            this.height = height;
+            this.width = width;
+
+            this.areaCalculator = function() {
+                return "A área do retângulo é " + (this.height * this.width);
+            };
+        }
+
+        var rectangle = new Rectangle(4, 2);
+
+        alert(rectangle.areaCalculator());
+    </script>
+</body>
+</html>

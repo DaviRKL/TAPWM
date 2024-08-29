@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Conta(nomeCorrentista, banco, numeroConta, saldo) {
+            let _nomeCorrentista = nomeCorrentista;
+            let _banco = banco;
+            let _numeroConta = numeroConta;
+            let _saldo = saldo;
+
+            return {
+                
+                getNomeCorrentista: function() {
+                    return _nomeCorrentista;
+                },
+                getBanco: function() {
+                    return _banco;
+                },
+                getNumeroConta: function() {
+                    return _numeroConta;
+                },
+                getSaldo: function() {
+                    return _saldo;
+                },
+
+                setNomeCorrentista: function(nomeCorrentista) {
+                    _nomeCorrentista = nomeCorrentista;
+                },
+                setBanco: function(banco) {
+                    _banco = banco;
+                },
+                setNumeroConta: function(numeroConta) {
+                    _numeroConta = numeroConta;
+                },
+                setSaldo: function(saldo) {
+                    _saldo = saldo;
+                }
+            };
+        }
+
+        function Corrente(nomeCorrentista, banco, numeroConta, saldo, saldoEspecial) {
+            let conta = Conta(nomeCorrentista, banco, numeroConta, saldo);
+            let _saldoEspecial = saldoEspecial;
+
+            return {
+                ...conta,
+                getSaldoEspecial: function() {
+                    return _saldoEspecial;
+                },
+                setSaldoEspecial: function(saldoEspecial) {
+                    _saldoEspecial = saldoEspecial;
+                }
+            };
+        }
+
+        function Poupanca(nomeCorrentista, banco, numeroConta, saldo, juros, dataVencimento) {
+            let conta = Conta(nomeCorrentista, banco, numeroConta, saldo);
+            let _juros = juros;
+            let _dataVencimento = dataVencimento;
+
+            return {
+                ...conta,
+                getJuros: function() {
+                    return _juros;
+                },
+                setJuros: function(juros) {
+                    _juros = juros;
+                },
+                getDataVencimento: function() {
+                    return _dataVencimento;
+                },
+                setDataVencimento: function(dataVencimento) {
+                    _dataVencimento = dataVencimento;
+                }
+            };
+        }
+
+        var corrente = Corrente("Josias", "banco 2", 1, 2300, 20);
+        var poupanca = Poupanca("Josias", "banco 2", 1, 2300, 2.5, "04/03/2002");
+
+        alert(
+            "Classe CORRENTE \n\n" +
+            "Nome do correntista da conta corrente: " + corrente.getNomeCorrentista() +
+            "\nBanco da conta corrente: " + corrente.getBanco() +
+            "\nNúmero da Conta: " + corrente.getNumeroConta() +
+            "\nSaldo especial da conta corrente: " + corrente.getSaldoEspecial() +
+            "\nJuros da poupança: " + poupanca.getJuros() +
+            "\nData de vencimento da poupança: " + poupanca.getDataVencimento()
+        );
+
+        corrente.setSaldoEspecial(600);
+        alert("Novo saldo especial da conta corrente: " + corrente.getSaldoEspecial());
+
+        alert(
+            "Classe POUPANÇA \n\n" +
+            "Nome do Correntista: " + poupanca.getNomeCorrentista() + "\n" +
+            "Banco: " + poupanca.getBanco() + "\n" +
+            "Número da Conta: " + poupanca.getNumeroConta() + "\n" +
+            "Saldo: " + poupanca.getSaldo() + "\n" +
+            "Juros: " + poupanca.getJuros() + "%" + "\n" +
+            "Data de Vencimento: " + poupanca.getDataVencimento()
+        );
+    </script>
+</body>
+</html>
