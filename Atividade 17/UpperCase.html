@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text" value="sim">
+    <button id="upper" onclick="Upper()">Upper</button>
+    <button id="lower" onclick="Lower()">Lower</button>
+    <script>
+       function Upper(){
+        let texto = document.getElementById("text").value;
+        document.getElementById("text").value = texto.toUpperCase();
+       }
+       
+       function Lower(){
+        let texto = document.getElementById("text").value;
+        document.getElementById("text").value = texto.toLowerCase();
+       }
+    </script>
+</body>
+</html>

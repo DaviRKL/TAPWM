@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="formulauro">
+        <label text="Nome" minlenght="10"></label>
+        <input type="text" value="nome">
+
+        <label text="Email"></label>
+        <input type="email">
+
+        <label text="Comentario"></label>
+        <textarea maxlength="20"></textarea>
+
+        <h2>Pesquisa:</h2>
+        <p>Primeira vez nesta pagina?</p>
+
+        <input type="submit" text="Enviar">
+        <button  text="Limpar"></button>
+    </form>
+    <script>
+        function validar(){
+            document.formulauro.elements[0]
+            alert("Que bom que vc voltou a visitar a pagina")
+        }
+    </script>
+</body>
+</html>
