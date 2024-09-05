@@ -3,30 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: aqua;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .titulo {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .radio-group {
+            margin-bottom: 15px;
+        }
+        .radio-group label {
+            margin-right: 10px;
+        }
+        .buttons {
+            text-align: center;
+        }
+        input[type="submit"], button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, button:hover {
+            background-color: #ccc;
+        }
+        .campo{
+            padding-right: 15px;
+        }
+    </style>
 </head>
 <body>
-    <form name="formulauro">
-        <label text="Nome" minlenght="10"></label>
-        <input type="text" value="nome">
 
-        <label text="Email"></label>
-        <input type="email">
+<div class="container">
+    <h1 class="titulo">Formulário Principal</h1>
+    
+    <form id="formulario" name="formulario">
+        <div class="campo">
+            <label>Nome:</label>
+            <input type="text" name="nome" minlength="10">
+        </div>
+        
+        <div class="campo">
+            <label>E-mail:</label>
+            <input type="email" name="email">
+        </div>
+        
+        <div class="campo">
+            <label>Comentário:</label>
+            <textarea name="comentario" minlength="20"></textarea>
+        </div>
 
-        <label text="Comentario"></label>
-        <textarea maxlength="20"></textarea>
+        <div class="radio-group">
+            <h2>Pesquisa:</h2>
+            <p>Primeira vez nesta página?</p>
+    
+            <label>Sim</label>
+            <input type="radio" name="option" value="sim">
+    
+            <label>Não</label>
+            <input type="radio" name="option" value="nao">
+        </div>
 
-        <h2>Pesquisa:</h2>
-        <p>Primeira vez nesta pagina?</p>
-
-        <input type="submit" text="Enviar">
-        <button  text="Limpar"></button>
+        <div class="buttons">
+            <input type="submit" value="Enviar" onclick="validar(event)">
+            <button type="reset">Limpar</button>
+        </div>
     </form>
-    <script>
-        function validar(){
-            document.formulauro.elements[0]
-            alert("Que bom que vc voltou a visitar a pagina")
+</div>
+
+<script>
+    function validar(event) {
+        event.preventDefault();
+
+        const selectedOption = document.querySelector('input[name="option"]:checked');
+        const nome = document.formulario.elements['nome'].value;
+
+        if (selectedOption) {
+            if (selectedOption.value === "sim") {
+                alert("Que bom te receber de volta, " + nome + "!");
+            } else if (selectedOption.value === "nao") {
+                alert("Volte sempre a esta página, " + nome + "!");
+            }
+        } else {
+            alert("Por favor, selecione uma opção.");
         }
-    </script>
+    }
+</script>
+
 </body>
 </html>
